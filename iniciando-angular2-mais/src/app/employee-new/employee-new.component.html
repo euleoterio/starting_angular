@@ -1,0 +1,16 @@
+<label>Nome: </label>
+<input type="text" [(ngModel)]="employee.name"><br> <!-- Two way data binding -->
+<label>Salário: </label>
+<input type="text" [(ngModel)]="employee.salary"><br> <!-- Two way data binding -->
+<div [hidden]="employee.salary >= 1000">
+  <label >Bônus: </label>
+  <input type="text" [(ngModel)]="employee.bonus"><br> <!-- Two way data binding -->
+</div>
+
+<!-- <p>{{ salary }}</p><br> -->
+
+<button type="button" (click)="addEmployee($event)">Adicionar o empregado</button>
+
+<!-- Programação altera o template -->
+<!-- template altere a class/component -->
+<!-- {{ name }} -->
